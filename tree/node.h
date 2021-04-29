@@ -1,51 +1,48 @@
 #ifndef NODE_H
 	#define NODE_H
 
+	#include <stdlib.h>
+	#include "../bool/bool.h"
+
 	typedef struct STreeNode
 	{
-		void* num;
+		void* value;
 		struct STreeNode *rNode;
 		struct STreeNode *lNode;
 	} TreeNode;
 
 	/*
 		return nullptr if TreeNode was not created correctly
-		otherwise, returns a reference to 
+		otherwise, returns a reference to the node
 	*/
-	TreeNode* create_node (void* value, TreeNode *rNode, TreeNode *lNode);
+	TreeNode* create_node(void* value, TreeNode *rNode, TreeNode *lNode);
 
 	/*
-		return a reference to the node if it waas not deleted correctly
-		otherwise return nullptr
+		free memory from the node
 	*/
-	TreeNode* delete_node (TreeNode *node);
+	void delete_node(TreeNode *node);
 
 	/*
 		return a reference to the right node
 		otherwise a nullptr
 	*/
-	TreeNode* right_node (TreeNode *node);
+	TreeNode* right_node(TreeNode *node);
 
 	/*
 		return a reference to the left node
 		otherwise a nullptr
 	*/
-	TreeNode* left_node (TreeNode *node);
-
-	/*
-		return value of the node
-	*/
-	void* get_value (TreeNode *node);
+	TreeNode* left_node(TreeNode *node);
 
 	/*
 		set value of the node
 	*/
-	void set_value (TreeNode *node);
+	void set_value(TreeNode *node, void *value);
 
 	/*
-		true - rNode and lNode are NULL
-		false - otherwise
+		return  true (1) if rNode and lNode are NULL
+						false (0) otherwise
 	*/
-	short int is_leaf (TreeNode *node);
+	short int is_leaf(TreeNode *node);
 
 #endif
