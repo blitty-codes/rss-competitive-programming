@@ -1,6 +1,4 @@
 #include "tree/node.h"
-#include "bool/bool.h"
-#include <stdio.h>
 
 int main () {
 	TreeNode *n = create_node((void *) 100, NULL, NULL);
