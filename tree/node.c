@@ -10,7 +10,7 @@ TreeNode *create_node(void *value, TreeNode *rNode, TreeNode *lNode)
 			lNode: NULL,
 		};
 	*/
-	TreeNode *new_node = (TreeNode *) calloc(1, sizeof(TreeNode));
+	TreeNode *new_node = (TreeNode *)calloc(1, sizeof(TreeNode));
 	new_node->value = value;
 	new_node->lNode = lNode;
 	new_node->rNode = rNode;
@@ -23,12 +23,12 @@ void delete_node(TreeNode *node)
 	free(node);
 }
 
-TreeNode* right_node(TreeNode *node)
+TreeNode *right_node(TreeNode *node)
 {
 	return node->rNode;
 }
 
-TreeNode* left_node(TreeNode *node)
+TreeNode *left_node(TreeNode *node)
 {
 	return node->lNode;
 }
