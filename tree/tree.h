@@ -1,6 +1,7 @@
 #ifndef TREE_H
 #define TREE_H
 #include "node.h"
+#include "bool.h"
 #include <stdlib.h>
 
 typedef struct STree
@@ -19,7 +20,7 @@ TreeNode *search(TreeNode *initial_node, int value);
 		This function adds a node and if needed, it reordenates the tree
 		return a nullptr otherwise a reference to the node added
 	*/
-TreeNode *add_node(TreeNode *initial_node, int value);
+int *add_node(TreeNode *initial_node, int value);
 
 /*
 		NULL - correctly deleted
