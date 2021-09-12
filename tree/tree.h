@@ -1,7 +1,7 @@
 #ifndef TREE_H
 #define TREE_H
 #include "node.h"
-#include "bool.h"
+#include "../bool/bool.h"
 #include <stdlib.h>
 
 typedef struct STree
