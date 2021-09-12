@@ -5,17 +5,17 @@ int *add_node(TreeNode *node, int value)
 	TreeNode *root = node;
 
 	if(root->value == value){ //Node already exist.
-		return -1;
+		return FALSE;
 	}
 
 	else if(root->lNode!=NULL && value<root){ //Left Insertation point.
 		root->lNode->value = value;
-		return 1;
+		return TRUE;
 	}
 
 	else if(root->rNode!=NULL && value>root){ //Right Insertation point.
 		root->rNode->value = value;
-		return 1;
+		return TRUE;
 	}
 	else{
 		if (root->value < value)
