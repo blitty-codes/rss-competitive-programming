@@ -1,5 +1,5 @@
 clear
-make
+make $1
 make clean
 sleep 1
 
