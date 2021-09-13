@@ -1,6 +1,6 @@
 #include "node.h"
 
-TreeNode *create_node(void *value, TreeNode *rNode, TreeNode *lNode)
+TreeNode *create_node(void *value, TreeNode *lNode, TreeNode *rNode)
 {
 	/*
 		Another way of init a struct (not dymaic)

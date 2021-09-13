@@ -15,7 +15,7 @@ typedef struct STreeNode
 		return nullptr if TreeNode was not created correctly
 		otherwise, returns a reference to the node
 	*/
-TreeNode *create_node(void *value, TreeNode *rNode, TreeNode *lNode);
+TreeNode *create_node(void *value, TreeNode *lNode, TreeNode *rNode);
 
 /*
 		free memory from the node
