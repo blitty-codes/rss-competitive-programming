@@ -6,7 +6,7 @@
 
 	#include <stdlib.h>
 	#include <string.h>
-	#include "../bool/bool.h"
+	#include "../Bool/bool.h"
 
 	typedef struct STrieNode
 	{
